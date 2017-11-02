@@ -20,7 +20,7 @@ class MaoYanException extends Exception
 }
 
 class Computer {
-	private int state = 3;
+	private int state = 1;
 	public void run() throws LanPingException, MaoYanException
 	{
 		if(state == 2)
