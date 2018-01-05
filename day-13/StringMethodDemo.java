@@ -1,0 +1,122 @@
+class StringMethodDemo
+{
+	public static void method_get()
+	{
+		String str = "abcdeapkf";
+		sop(str.length());
+		sop(str.indexOf("b"));
+		sop(str.charAt(4));
+		
+		sop(str.indexOf("a", 3));
+		sop(str.indexOf("b", 3));
+		
+		// sop(str.charAt(40));
+
+		sop(str.lastIndexOf("a"));
+	}
+
+	public static void method_is()
+	{
+		String str = "ArrayDemo.java";
+		sop(str.startsWith("Array"));
+		sop(str.endsWith(".java"));
+		sop(str.contains("Demo"));
+	}
+
+	public static void method_trans()
+	{
+		// char [] arr = {'a', 'b', 'c', 'd', 'e', 'f'};
+		// String str = new String(arr);
+		// String str = new String(arr, 1, 3);
+		// sop("str=" + str);
+
+		String str1 = "zxcvbnm";
+		char [] chars = str1.toCharArray();
+
+		for(int i = 0; i < chars.length; i++)
+		{
+			sop(chars[i]);
+		}
+	}
+
+	public static void method_replace()
+	{
+		String s1 = "Hello java";
+
+		String s2 = s1.replace("a", "n");
+
+		String s3 = s1.replace("java", "javscript");
+
+		sop("s1=" + s1);
+		sop("s2=" + s2);
+		sop("s3=" + s3);
+	}
+
+	public static void method_split()
+	{
+		String str = "zhangsan,lisi,wangwu";
+
+		String[] arr = str.split(",");
+
+		for(int i = 0; i < arr.length; i++)
+		{
+			sop(arr[i]);
+		}
+	}
+
+	public static void method_substring()
+	{
+		String str = "abcdef";
+
+		sop(str.substring(2));
+		sop(str.substring(2, 4));
+	}
+
+	public static void method_c()
+	{
+		String str = "                     Hello Java                         ";
+
+		sop(str.toUpperCase());
+
+		sop(str.toLowerCase());
+
+		sop(str.trim());
+
+		String str1 = "abc";
+		String str2 = "aba";
+		String str3 = "abd";
+
+		sop(str1.compareTo(str2));
+		sop(str1.compareTo(str3));
+	}
+
+	public static void main(String[] args)
+	{
+		/* String s1 = "abc";
+		String s2 = new String("abc");
+		String s3 = "abc";
+
+		System.out.println(s1 == s2);
+		System.out.println(s1 == s3);
+		*/
+
+		// method_get();
+
+		// method_is();
+
+		// method_trans();
+
+		// method_replace();
+
+		// method_split();
+
+		// method_substring();
+
+		method_c();
+	}
+
+	public static void sop(Object obj)
+	{
+		System.out.println(obj);
+	}
+}

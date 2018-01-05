@@ -1,0 +1,19 @@
+package pack_06;
+
+import packb.haha.hehe.heihei.DemoC;
+
+class PackageDemo01
+{
+	public static void main(String[] args)
+	{
+		// packa.DemoA d = new packa.DemoA();
+		// d.show();
+
+		// packb.DemoB d = new packb.DemoB();
+		// d.method();
+
+		// packb.haha.hehe.heihei.DemoC c = new packb.haha.hehe.heihei.DemoC();
+
+		DemoC d = new DemoC();
+	}
+}

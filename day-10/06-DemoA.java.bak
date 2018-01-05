@@ -1,0 +1,9 @@
+package packa;
+
+class DemoA
+{
+	void show()
+	{
+		System.out.println("Hello packageA!");
+	}
+}
